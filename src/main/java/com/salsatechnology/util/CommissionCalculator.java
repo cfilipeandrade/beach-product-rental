@@ -8,25 +8,25 @@ public class CommissionCalculator {
         double commissionRate;
         switch (productOrder.getProductType()) {
             case SURFBOARD:
-                commissionRate = 0.156; // 15.6%
+                commissionRate = 0.156;
                 break;
             case BEACH_CHAIR:
-                commissionRate = 0.05; // 5%
+                commissionRate = 0.05;
                 break;
             case SUNSHADE:
-                commissionRate = 0.103; // 10.3%
+                commissionRate = 0.103;
                 break;
             case SAND_BOARD:
-                commissionRate = 0.09; // 9%
+                commissionRate = 0.09;
                 break;
             case BEACH_TABLE:
-                commissionRate = 0.081; // 8.1%
+                commissionRate = 0.081;
                 break;
             default:
-                commissionRate = 0; // Default to 0%
+                commissionRate = 0;
                 break;
         }
         double commission = productOrder.getProductTotal() * commissionRate;
-        return Math.round(commission); // Multiplica por 100 para salvar como inteiro no banco de dados
+        return Math.round(commission);
     }
 }

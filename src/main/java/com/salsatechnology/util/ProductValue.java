@@ -9,22 +9,22 @@ public class ProductValue {
         long productValue;
         switch (productOrderDTO.getProductType()) {
             case SURFBOARD:
-                productValue = 5000; // R$50,00
+                productValue = 5000;
                 break;
             case BEACH_CHAIR:
-                productValue = 3500; // R$35,00
+                productValue = 3500;
                 break;
             case SUNSHADE:
-                productValue = 4000; // R$40,00
+                productValue = 4000;
                 break;
             case SAND_BOARD:
-                productValue = 2500; // R$25,00
+                productValue = 2500;
                 break;
             case BEACH_TABLE:
-                productValue = 2500; // R$25,00
+                productValue = 2500;
                 break;
             default:
-                productValue = 0; // Valor padrão
+                productValue = 0;
                 break;
         }
 
